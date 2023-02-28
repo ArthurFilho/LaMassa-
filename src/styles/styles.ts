@@ -12,8 +12,8 @@ interface BannerProps {
 
 const BannersVariants = {
     primary: 'black',
-    secondary: 'orange',
-    tertiary: 'white',
+    secondary: 'white',
+    tertiary: '#FC4300',
     ColorPrimary: 'white',
     ColorSecondary: 'black',
 }
@@ -95,5 +95,58 @@ export const Banners = styled.div<BannerProps>`
     }};
     @media (max-width: 768px) {
         font-size: 50px;
+    }
+`
+
+export const WhereFind = styled.div`
+    width: 100%;
+    height: 500px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    div {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 5px;
+        }
+        button {
+            width: 200px;
+            border-radius: 20px;
+            background-color: #FC4300;
+            color: white;
+            padding: 12.5px;
+            border: none;
+            margin-top: 10px;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        button:hover {
+            background-color: #ff8c00;
+        }
+    }
+`
+
+export const Footer = styled.div`
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    a {
+        color: #FC4300;
     }
 `
