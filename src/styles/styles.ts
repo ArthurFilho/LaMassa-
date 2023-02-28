@@ -140,6 +140,7 @@ export const WhereFind = styled.div`
 
     @media (max-width: 768px) {
         justify-content: center;
+        margin-left: 7.5px;
         img {
             display: none;
         }
@@ -155,5 +156,11 @@ export const Footer = styled.div`
     flex-direction: column;
     a {
         color: #FC4300;
+    }
+    @media (max-width: 768px) {
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        width: 50%;
     }
 `
