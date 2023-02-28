@@ -64,7 +64,7 @@ export const DescriptionLaMassa = styled.div`
     }
     } 
     @media (max-width: 768px) {
-        margin-left: 20px;
+        margin-left: 10px;
         
         img {
             display: none;
