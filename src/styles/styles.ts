@@ -101,12 +101,12 @@ export const Banners = styled.div<BannerProps>`
 export const WhereFind = styled.div`
     width: 100%;
     height: 500px;
-    background-color: black;
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: space-around;
     div {
-        color: white;
+        color: black;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -135,6 +135,13 @@ export const WhereFind = styled.div`
         }
         button:hover {
             background-color: #ff8c00;
+        }
+    }
+
+    @media (max-width: 768px) {
+        justify-content: center;
+        img {
+            display: none;
         }
     }
 `
