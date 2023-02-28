@@ -1,5 +1,5 @@
 import { GlobalStyle } from "./styles/global";
-import { BannerPizza, BannerScroll, DescriptionLaMassa, MainContainer } from "./styles/styles";
+import { BannerPizza, Banners, BannerScroll, BannerVariant, DescriptionLaMassa, MainContainer } from "./styles/styles";
 import Pizza from "../src/assets/pizzaAbout.png"
 
 export function App() {
@@ -42,9 +42,17 @@ export function App() {
       </DescriptionLaMassa>
 
       <BannerScroll>
-        <div>
+        <Banners variant="primary" variantColor="ColorPrimary">
           LA MASSA
-        </div>
+        </Banners>
+
+        <Banners variant="secondary" variantColor="ColorPrimary">
+          LA MASSA
+        </Banners>
+
+        <Banners variant="tertiary" variantColor="ColorSecondary">
+          LA MASSA
+        </Banners>
       </BannerScroll>
 
       <GlobalStyle />

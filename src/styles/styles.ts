@@ -1,7 +1,22 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 import Banner from "../assets/banner.jpg"
 
+export type BannerVariant = "primary" | "secondary" | "tertiary";
+export type BannerColorVariant = "ColorPrimary" | "ColorSecondary";
+
+interface BannerProps {
+    variant: BannerVariant;
+    variantColor: BannerColorVariant;
+}
+
+const BannersVariants = {
+    primary: 'black',
+    secondary: 'orange',
+    tertiary: 'white',
+    ColorPrimary: 'white',
+    ColorSecondary: 'black',
+}
 export const MainContainer = styled.div`
     display: flex;
     flex-direction: column;
@@ -47,11 +62,18 @@ export const BannerScroll = styled.div`
     flex-direction: column;
     width: 100%;
     height: 900px;
-    div {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: 300px;
-    }
+`
+
+export const Banners = styled.div<BannerProps>`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+    ${props => {
+        return css`background-color: ${BannersVariants[props.variant]}`
+    }};
+    ${props => {
+        return css`color: ${BannersVariants[props.variantColor]}`
+    }};
 `
