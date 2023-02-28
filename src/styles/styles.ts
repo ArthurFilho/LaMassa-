@@ -161,6 +161,5 @@ export const Footer = styled.div`
         align-items: center;
         text-align: center;
         justify-content: center;
-        width: 50%;
     }
 `
