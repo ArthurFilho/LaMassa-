@@ -62,7 +62,14 @@ export const DescriptionLaMassa = styled.div`
         font-size: 30px;
         font-family: 'nunito', sans-serif;
     }
-    }   
+    } 
+    @media (max-width: 768px) {
+        margin-left: 20px;
+        
+        img {
+            display: none;
+        }
+    }  
 `
 
 export const BannerScroll = styled.div`
@@ -86,4 +93,7 @@ export const Banners = styled.div<BannerProps>`
     ${props => {
         return css`color: ${BannersVariants[props.variantColor]}`
     }};
+    @media (max-width: 768px) {
+        font-size: 50px;
+    }
 `
