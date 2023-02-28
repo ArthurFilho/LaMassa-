@@ -33,7 +33,14 @@ export const BannerPizza = styled.div`
     align-items: center;
     justify-content: center;
     color: white;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Berkshire Swash', cursive;
+    h1 {
+        font-size: 60px;
+    }
+
+    h2 {
+        font: 50px;
+    }
 `
 
 export const DescriptionLaMassa = styled.div`
@@ -53,6 +60,7 @@ export const DescriptionLaMassa = styled.div`
         p {
         margin-bottom: 30px;
         font-size: 30px;
+        font-family: 'nunito', sans-serif;
     }
     }   
 `
@@ -70,6 +78,8 @@ export const Banners = styled.div<BannerProps>`
     justify-content: center;
     width: 100%;
     height: 300px;
+    font-size: 80px;
+    font-family: 'Berkshire Swash', cursive;
     ${props => {
         return css`background-color: ${BannersVariants[props.variant]}`
     }};

@@ -31,7 +31,7 @@ export function App() {
       Ao lembrar de seu amigo, hoje
       seu socio na La Massa, bom co-
       zinheiro, resolve convida-lo para
-      criar aLa Massa, com o foco de
+      criar a La Massa, com o foco de
       da a oportunidade as pessoas
       de desfrutem de boas pizzas e
       massas no conforto de casa.
