@@ -1,5 +1,5 @@
 import { GlobalStyle } from "./styles/global";
-import { BannerPizza, Banners, BannerScroll, BannerVariant, DescriptionLaMassa, Footer, MainContainer, WhereFind } from "./styles/styles";
+import { BannerPizza, Banners, BannerScroll, BannerVariant, DescriptionLaMassa, Footer, MainContainer, PlaceFind, WhereFind } from "./styles/styles";
 
 import Pizza from "../src/assets/pizzaAbout.png"
 import PizzaWhereFind from "../src/assets/pizzaWhereFind.png"
@@ -69,6 +69,10 @@ export function App() {
         </div>
       </WhereFind>
 
+      {/* <PlaceFind>
+        
+      </PlaceFind> */}
+      
       <Footer>
         <h2>Funcionamento no Ifood <a href="#">clique aqui</a></h2>
         <p> © 2023 La Massa. Todos os direitos reservados.</p>

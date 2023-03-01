@@ -1,6 +1,7 @@
 import styled, { css } from "styled-components";
 
 import Banner from "../assets/banner.jpg"
+import FundoPreto from "../assets/fundoPreto.jpg"
 
 export type BannerVariant = "primary" | "secondary" | "tertiary";
 export type BannerColorVariant = "ColorPrimary" | "ColorSecondary";
@@ -105,8 +106,10 @@ export const WhereFind = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-around;
+    background-image: url(${FundoPreto});
+    background-size: cover;
     div {
-        color: black;
+        color: white;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -147,6 +150,10 @@ export const WhereFind = styled.div`
     }
 `
 
+export const PlaceFind = styled.div`
+    height: 400px;
+`
+
 export const Footer = styled.div`
     width: 100%;
     height: 200px;
@@ -161,5 +168,8 @@ export const Footer = styled.div`
         align-items: center;
         text-align: center;
         justify-content: center;
+        h2 {
+            flex-direction: column;
+        }
     }
 `
