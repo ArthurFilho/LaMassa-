@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 
-import Banner from "../assets/banner.png"
+import Banner from "../assets/banner.jpg"
 import FundoPreto from "../assets/fundoPreto.jpg"
 
 export type BannerVariant = "primary" | "secondary" | "tertiary";

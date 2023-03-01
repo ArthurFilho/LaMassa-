@@ -3,14 +3,14 @@ import { BannerPizza, Banners, BannerScroll, BannerVariant, DescriptionLaMassa, 
 
 import Pizza from "../src/assets/pizzaAbout.png"
 import PizzaWhereFind from "../src/assets/pizzaWhereFind.png"
+import Logo from "../src/assets/logo.png"
 
 export function App() {
   
   return (
     <MainContainer>
       <BannerPizza>
-        <h1>La Massa</h1>
-        <h2>PIZZARIA E RESTAURANTE</h2>
+        <img src={Logo} width={400} />
       </BannerPizza>
       <DescriptionLaMassa>
       <div>
