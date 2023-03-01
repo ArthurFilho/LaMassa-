@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 
-import Banner from "../assets/banner.jpg"
+import Banner from "../assets/banner.png"
 import FundoPreto from "../assets/fundoPreto.jpg"
 
 export type BannerVariant = "primary" | "secondary" | "tertiary";
@@ -25,7 +25,7 @@ export const MainContainer = styled.div`
 
 export const BannerPizza = styled.div`
     width: 100%;
-    height: 850px;
+    height: 500px;
     background-image: url(${Banner});
     background-repeat: no-repeat;
     background-size: cover;
